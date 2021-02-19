@@ -9,8 +9,8 @@ export default function Character(props) {
 
     return (
         <div className='character-div'>
-            {characters.map((person) => {
-                return <Info key={person.id} person={person} />
+            {characters.map((character, index) => {
+                return <Info key={index} character={character} />
             })}
             
         
