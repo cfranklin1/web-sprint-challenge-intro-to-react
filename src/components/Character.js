@@ -4,12 +4,15 @@ import Info from './Info';
 
 export default function Character(props) {
     
-    const {charList} = props;
+    const {characters} = props;
 
 
     return (
         <div className='character-div'>
-            <Info name={charList.name}/>
+            {characters.map((person) => {
+                return <Info key={person.id} person={person} />
+            })}
+            
         
         </div>
     )

@@ -2,13 +2,11 @@ import React from 'react';
 
 export default function Info(props) {
 
-    const { name } = props;
+    const { person } = props;
 
     return (
         <div className='info-div'>
-            <div className='character-name'>
-                <p>{name}</p>
-            </div>
+            <h2>{person.name}</h2>
 
         </div>
     );
