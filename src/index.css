@@ -5,3 +5,10 @@ body {
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
+
+.App {
+  font-family: monospace;
+  font-size: larger;
+
+}
+

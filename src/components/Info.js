@@ -6,7 +6,13 @@ export default function Info(props) {
 
     return (
         <div className='info-div'>
-            <h3>{character.name}</h3>
+            <div className='name-div'>
+                <h3>{character.name}</h3> 
+            </div>
+            <div className='more-info'>
+                <button className='info-button'>{character.birth_year}</button>
+            </div>
+            
 
         </div>
     );

@@ -16,8 +16,8 @@ const App = () => {
   const getList = () => {
     axios
     .get(`${url}`)
-    .then((response) => {
-      setCharList(response.data);
+    .then((res) => {
+      setCharList(res.data);
     })
     .catch((error) => {
       console.error(`Error: ${error}`)
