@@ -1,8 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import styled from 'styled-components';
+
 
 import Character from './components/Character.js';
+
+const AppDiv = styled.div`
+
+    width: 100%;
+    height: 100%;
+`;
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
